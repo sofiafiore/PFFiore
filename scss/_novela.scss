@@ -1,0 +1,183 @@
+.novelas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 0fr;
+  gap: 5px 0px;
+  grid-auto-flow: row dense;
+  align-items: start;
+  grid-template-areas:
+    "boxn0 boxn0 boxn0"
+    "boxn1 boxn1 boxn2"
+    "boxn3 boxn4 boxn4"
+    "boxn5 boxn5 boxn6"
+    "boxn7 boxn8 boxn8"
+    "boxn9 boxn9 boxn10";
+  padding-top: 120px;
+
+  .boxn3,
+  .boxn6,
+  .boxn7,
+  .boxn10 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .boxn0,
+  .boxn1,
+  .boxn2,
+  .boxn3,
+  .boxn4,
+  .boxn5,
+  .boxn6,
+  .boxn7,
+  .boxn8,
+  .boxn9,
+  .boxn10 {
+    background-color: $fondoclaro;
+    height: 100%;
+    padding: 50px;
+    p {
+      text-align: justify;
+      font-size: 15px;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Orbitron", sans-serif;
+    }
+    h2 {
+      font-family: "Orbitron", sans-serif;
+    }
+    h3 {
+      font-family: "Orbitron", sans-serif;
+    }
+  }
+  .boxn0 {
+    grid-area: boxn0;
+    display: flex;
+    justify-content: center;
+
+    #carouselExample {
+      width: 70%;
+      .carousel-item {
+        .col-4 {
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .boxn1 {
+    grid-area: boxn1;
+  }
+
+  .boxn2 {
+    grid-area: boxn2;
+    img {
+      width: 70%;
+      top: 0;
+      position: sticky;
+    }
+  }
+
+  .boxn3 {
+    grid-area: boxn3;
+    img {
+      margin-left: 20%;
+      margin-top: 20%;
+      margin-bottom: 5px;
+      height: 600px;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  .boxn4 {
+    grid-area: boxn4;
+  }
+
+  .boxn5 {
+    grid-area: boxn5;
+  }
+
+  .boxn6 {
+    grid-area: boxn6;
+
+    img {
+      margin-left: 20%;
+      margin-top: 20%;
+      margin-bottom: 5px;
+      height: 600px;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  .boxn7 {
+    grid-area: boxn7;
+
+    img {
+      margin-left: 20%;
+      margin-top: 20%;
+      margin-bottom: 5px;
+      height: 600px;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  .boxn8 {
+    grid-area: boxn8;
+  }
+
+  .boxn9 {
+    grid-area: boxn9;
+  }
+
+  .boxn10 {
+    grid-area: boxn10;
+
+    img {
+      margin-left: 20%;
+      margin-top: 20%;
+      margin-bottom: 5px;
+      height: 600px;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    grid-template-areas:
+      "boxn0"
+      "boxn1"
+      "boxn2"
+      "boxn4"
+      "boxn3"
+      "boxn5"
+      "boxn6"
+      "boxn8"
+      "boxn7"
+      "boxn9"
+      "boxn10";
+    grid-template-columns: none;
+    padding: 10px;
+
+    .boxn0 {
+      padding: 10px;
+    }
+    .boxn2,
+    .boxn3,
+    .boxn6,
+    .boxn7,
+    .boxn10 {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 200px;
+        margin: 0;
+      }
+    }
+  }
+}

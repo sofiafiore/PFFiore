@@ -1,0 +1,45 @@
+footer {
+  background-color: rgb(172, 63, 63);
+
+  .partebaja {
+    display: flex;
+    grid-column: 20%, 60%, 20%;
+    align-items: center;
+    align-content: center;
+    .seguinos {
+      display: flex;
+      grid-column: 1;
+      align-items: center;
+      margin-left: 10px;
+      margin: 15px h1 {
+        font-family: "Orbitron", sans-serif;
+      }
+      .redes {
+        display: flex;
+        height: 20px;
+        margin-left: 20px;
+        align-items: center;
+      }
+    }
+    .piepag {
+      display: flex;
+      grid-column: 3;
+      margin-left: auto;
+      font-family: "Orbitron", sans-serif;
+      margin-right: 10px;
+      img {
+        height: 40px;
+      }
+    }
+  }
+  @media (max-width: 1100px){
+    .partebaja{
+      padding: 15px 10px;
+      .piepag{
+        h1{
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,377 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor h1 {
+    font-size: 100px;
+}
+
+.logo {
+    width: 60px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+}
+
+html {
+    width: 100%;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.contenedor p {
+    margin: 20px;
+}
+
+.contenedor h1 {
+    margin: 20px;
+}
+
+iframe {
+    margin: 20px;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: rgb(170, 137, 94);
+    margin-top: 90px;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: rgb(170, 137, 94);
+    margin-top: 90px;
+}
+
+.box2 img {
+    width: 600px;
+    margin-top: 16%;
+    margin-right: 5px;
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: rgb(170, 137, 94);
+    margin-top: 15px;
+}
+
+.box4 {
+    grid-area: box4;
+    background-color: rgb(170, 137, 94);
+    margin-top: 15px;
+}
+
+.box5 {
+    grid-area: box5;
+    background-color: rgb(170, 137, 94);
+    margin-top: 15px;
+}
+
+.box6 {
+    grid-area: box6;
+    background-color: rgb(170, 137, 94);
+    margin-top: 15px;
+}
+.box7 {
+    grid-area: box7;
+    background-color: rgb(170, 137, 94);
+    margin-top: 15px;
+}
+.box8 {
+    grid-area: box8;
+    background-color: rgb(170, 137, 94);
+    margin-top: 15px;
+}
+
+.box6 img {
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 5px;
+    height: 300px;
+}
+.contenedor {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-areas:
+        "box1 box1 box2"
+        "box3 box4 box4"
+        "box5 box5 box6"
+        "box7 box7 box8"
+    ;
+}
+input {
+    height: 48px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.registro button {
+    background-color: #252726;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.botonMenu{
+    background-color: #252726;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.registro a {
+    text-decoration: none;
+    color: aliceblue;
+}
+button:hover {
+    transition: 0.5s;
+    background-color: rgb(172, 63, 63);
+}
+
+
+.dropdown {
+    visibility: hidden;
+}
+
+.cabeza {
+    display: flex;
+    grid-column: 25%, 50%;
+    background-color: rgb(172, 63, 63);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.titulo {
+    display: flex;
+    grid-column: 1;
+    align-items: center;
+    align-content: flex-start;
+    margin-left: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.registro {
+    display: flex;
+    margin-left: 5px;
+    align-content: flex-end;
+}
+
+.titulo a {
+    text-decoration: none;
+    color: rgb(5, 5, 4);
+}
+
+.menu {
+    grid-column: 2;
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+    align-content: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    padding: 20px;
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Orbitron', sans-serif;
+    transition-duration: 0.4s;
+}
+
+
+.menu li a:hover {
+    color: white;
+}
+
+.botonMenu {
+    visibility: hidden;
+}
+
+@media (max-width: 1100px) {
+    .contenedor {
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            
+        ;
+    }
+
+    @media (max-width: 1100px) {
+        body {
+            padding-top: 70px;
+        }
+
+        .header {
+            height: 60px;
+        }
+
+        .logo {
+            font-size: 25px;
+            padding: 0 20px;
+            line-height: 60px;
+        }
+
+        .nav-menu {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #2c3e50;
+            position: fixed;
+            top: 60px;
+            width: 100%;
+            padding: 20px 0;
+            height: calc(100% - 60px);
+            overflow-y: auto;
+            left: 100%;
+            transition: left 0.3s;
+        }
+
+        .nav-menu-item {
+            line-height: 70px;
+        }
+
+        .nav-menu-link:hover,
+        .nav-menu-link_active {
+            background: none;
+            color: #83c5f7;
+        }
+
+        .dropdown {
+            visibility: visible;
+            margin-right: 150px;
+        }
+
+        .menu,
+        .registro {
+            visibility: hidden;
+        }
+
+        .botonMenu {
+            visibility: visible;
+        }
+
+        .offcanvas-body {
+
+            padding: 20px;
+            color: black;
+            text-decoration: none;
+            font-size: x-large;
+            font-family: 'Orbitron', sans-serif;
+            transition-duration: 0.4s;
+            background-color: rgb(172, 63, 63);
+
+        }
+        .offcanvas-header{
+            background-color: rgb(172, 63, 63);
+        }
+        
+        .offcanvas-body ul {
+            text-decoration: none;
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+        
+        .offcanvas-body li {
+            text-decoration: none;
+            display: block;
+        }
+        .offcanvas-body a {
+            text-decoration: none;
+            display: block;
+            color: black;
+        }
+        .offcanvas-body a:hover {
+            transition: 0.5s;
+            color: white;
+        }
+    }
+}
+
+footer {
+    background-color: rgb(172, 63, 63);
+    
+}
+
+.partebaja {
+    display: flex;
+    grid-column: 20%, 60%, 20%;
+    align-items: center;
+    align-content: center;
+}
+
+.seguinos {
+    display: flex;
+    grid-column: 1;
+    align-items: center;
+    margin-left: 10px;
+    margin: 15px
+}
+
+.seguinos h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.redes {
+    display: flex;
+    height: 20px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.piepag {
+    display: flex;
+    grid-column: 3;
+    margin-left: auto;
+    font-family: 'Orbitron', sans-serif;
+    margin-right: 10px;
+}
+
+.piepag img {
+    height: 40px;
+}
